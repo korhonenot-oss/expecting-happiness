@@ -1,0 +1,137 @@
+/* EXPECTING HAPPINESS BRAND STYLE */
+
+:root {
+--cream: #fffaf6;
+--rose: #d9a7b0;
+--sage: #cbdcc7;
+--blue: #dcebf4;
+--lavender: #e9dce8;
+--text: #5c5050;
+--heading: #806070;
+--white: #ffffff;
+}
+
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+font-family: "Helvetica Neue", Arial, sans-serif;
+background: var(--cream);
+color: var(--text);
+line-height: 1.7;
+}
+
+header {
+background: linear-gradient(
+135deg,
+var(--rose),
+var(--lavender),
+var(--blue)
+);
+padding: 70px 20px;
+text-align: center;
+}
+
+.logo {
+width: 230px;
+max-width: 90%;
+}
+
+h1 {
+font-size: 48px;
+color: var(--heading);
+margin: 20px 0 10px;
+}
+
+h2 {
+color: var(--heading);
+font-size: 32px;
+}
+
+.tagline {
+font-size: 22px;
+letter-spacing: 2px;
+}
+
+nav {
+background: white;
+padding: 15px;
+text-align: center;
+position: sticky;
+top: 0;
+}
+
+nav a {
+color: var(--heading);
+text-decoration: none;
+margin: 0 12px;
+font-weight: 600;
+}
+
+.hero {
+padding: 60px 20px;
+max-width: 1000px;
+margin: auto;
+text-align: center;
+}
+
+.hero h2 {
+font-size: 38px;
+}
+
+.button {
+display: inline-block;
+background: var(--rose);
+color: white;
+padding: 14px 30px;
+border-radius: 40px;
+text-decoration: none;
+margin-top: 20px;
+}
+
+.section {
+max-width: 1000px;
+margin: auto;
+padding: 50px 20px;
+}
+
+.card {
+background: var(--white);
+border-radius: 25px;
+padding: 35px;
+margin-bottom: 30px;
+box-shadow: 0 8px 25px rgba(0,0,0,.06);
+}
+
+.photo {
+width: 100%;
+max-width: 400px;
+border-radius: 25px;
+}
+
+.quote {
+background: var(--sage);
+padding: 50px 25px;
+text-align: center;
+font-size: 25px;
+font-style: italic;
+}
+
+footer {
+background: #f5eded;
+text-align: center;
+padding: 35px;
+}
+
+@media(max-width:700px){
+h1 {
+font-size: 36px;
+}
+
+nav a {
+display:block;
+margin:8px;
+}
+}
